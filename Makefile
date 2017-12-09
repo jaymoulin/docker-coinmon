@@ -5,8 +5,9 @@ archs = amd64 arm64v8 arm32v6
 
 .PHONY: all build publish latest
 all: build publish latest
-build:
+qemu-aarch64-static:
 	cp /usr/bin/qemu-*-static .
+build: qemu-aarch64-static
 	$(foreach arch,$(archs), \
 		cat Dockerfile | sed "s/FROM node:alpine/FROM ${arch}\/node:alpine/g" > .Dockerfile; \
 		docker build -t jaymoulin/coinmon:${VERSION}-$(arch) -f .Dockerfile ${CACHE} .;\
