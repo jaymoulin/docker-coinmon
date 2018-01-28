@@ -1,5 +1,5 @@
 CACHE ?= --no-cache=1
-VERSION ?= 0.0.13
+VERSION ?= 0.0.16
 FULLVERSION ?= ${VERSION}
 archs = amd64 arm64v8 arm32v6
 
