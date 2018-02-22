@@ -1,6 +1,6 @@
 CACHE ?= --no-cache=1
-VERSION ?= 0.0.20
-FULLVERSION ?= 0.0.20
+VERSION ?= 0.0.22
+FULLVERSION ?= 0.0.22
 archs = amd64 arm64v8 arm32v6
 
 .PHONY: all build publish latest
