@@ -26,6 +26,7 @@ This Docker image is base upon [Coinmon](https://github.com/bichenkk/coinmon)
 ## Install
 
 In order to use coinmon, make sure that you have [Docker](https://www.docker.com/) installed.
+Please note that this package is also hosted on Github Container Registry, just add `ghcr.io/` before the image name (`docker pull ghcr.io/jaymoulin/coinmon` instead of `jaymoulin/coinmon`)
 
 ```
 $ docker run --rm -t jaymoulin/coinmon
